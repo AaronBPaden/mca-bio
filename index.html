@@ -8,6 +8,7 @@
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
         <title>Title</title>
     </head>
     <body>
@@ -47,36 +48,40 @@
         <main class="main"> <!-- begin main -->
             <div class="container">
                 <div class="about">
-                    <h2 class="section-header" id="about">About</h2>
+                    <div class="section-header">
+                        <h2 id="about">About</h2>
+                    </div>
                     <p>I've taken two semsters of general programming courses and I am currently taking a full stack web development course through MS Coding Academy. I have varying levels of familiarity with Python, Bash, C, C++, Rust, lua, HTML, CSS, and Javascript</p>
                 </div>
                 <div class="projects">
-                    <h2 class="section-header" id="projects">Projects</h2>
+                    <div class="section-header">
+                        <h2 id="projects">Projects</h2>
+                    </div>
                     <div class="row project-box">
-                        <figure class="col">
+                        <figure class="col-auto">
                             <img class="img-fluid" src="media/bloom.png" alt="Bloom project">
                         </figure>
-                        <div class="col">
+                        <div class="col-auto">
                             <h3 class="project-title">Bloom Project</h3>
                             <p>MCA Bloom project</p>
                             <button class="btn">View Code</button>
                         </div>
                     </div>
                     <div class="row project-box">
-                        <figure class="col">
+                        <figure class="col-auto">
                             <img class="img-fluid" src="media/umbrella.png" alt="placeholder">
                         </figure>
-                        <div class="col">
+                        <div class="col-auto">
                             <h3 class="project-title">Project</h3>
                             <p>MCA Umbrella Project</p>
                             <button class="btn">View Code</button>
                         </div>
                     </div>
                     <div class="row project-box">
-                        <figure class="col">
+                        <figure class="col-auto">
                             <img class="img-fluid" src="media/venedor.png" alt="placeholder">
                         </figure>
-                        <div class="col">
+                        <div class="col-auto">
                             <h3 class="project-title">Project</h3>
                             <p>MCA Venedor project</p>
                             <button class="btn">View Code</button>
@@ -86,27 +91,29 @@
             </div>
         </main>
         <footer class="container-fluid footer"> <!-- begin footer -->
-            <div class="row">
-                <div class="col" id="contact">
-                    Contact
-                </div>
-                <div class="col">
-                    <nav class="footer-nav">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#"><img src="media/icons/linkedin.svg" alt="linkedin"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#"><img src="media/icons/github.svg" alt="github"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#"><img src="media/icons/email.svg" alt="email"></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col">
-                    Created by Aaron Paden
+            <div class="container">
+                <div class="row">
+                    <div class="col d-none d-md-block" id="contact">
+                        Contact
+                    </div>
+                    <div class="col">
+                        <nav class="footer-nav">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#"><img src="media/icons/linkedin.svg" alt="linkedin"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#"><img src="media/icons/github.svg" alt="github"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#"><img src="media/icons/email.svg" alt="email"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        Created by Aaron Paden
+                    </div>
                 </div>
             </div>
         </footer>

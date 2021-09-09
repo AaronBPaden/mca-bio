@@ -1,0 +1,105 @@
+/* global section */
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* header section */
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url("../media/header-bg.png");
+    color: white;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+}
+
+.header-info > img {
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.header-info h1 {
+    font-size: 2rem;
+}
+
+.social-box li {
+    padding: 0.5rem;
+}
+
+.social-box img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%);
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-header {
+    background: black;
+}
+
+.site-nav li {
+    padding: 0.5rem;
+}
+
+.site-nav a {
+    color: white;
+}
+
+/* main section */
+
+.section-header {
+    border-bottom: 2px solid lightblue;
+    margin: 1rem 0;
+}
+
+.section-header h2 {
+    display: inline-block;
+    position: relative;
+    background: lightblue;
+}
+
+.section-header h2::after {
+    position: absolute;
+    width: 100%;
+    /* This hack fixes an issue in Firefox where there's a 1 pixel cap between the triangle and the border. */
+    height: calc(100% + 1px);
+    content: '';
+    background: lightblue;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    transform-origin: top;
+    transform: skewX(50deg);
+}
+
+
+/* footer section */
+
+.footer {
+    padding: 1rem;
+    color: white;
+    background: black;
+}
+
+.footer li {
+    padding: 0.5rem;
+}
+
+.footer img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%);
+}
